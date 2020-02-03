@@ -6,6 +6,6 @@ target 'grad2020' do
   use_frameworks!
 
 
-pod “Alamofire”
+  pod “Alamofire”
 
 end

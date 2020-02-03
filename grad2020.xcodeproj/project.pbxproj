@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,29 +13,8 @@
 		09D601A323E818C000762EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D601A223E818C000762EC7 /* Assets.xcassets */; };
 		09D601A623E818C000762EC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D601A523E818C000762EC7 /* Preview Assets.xcassets */; };
 		09D601A923E818C000762EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D601A723E818C000762EC7 /* LaunchScreen.storyboard */; };
-		09D601B423E818C000762EC7 /* grad2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D601B323E818C000762EC7 /* grad2020Tests.swift */; };
-		09D601BF23E818C000762EC7 /* grad2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D601BE23E818C000762EC7 /* grad2020UITests.swift */; };
-		3F5880E628CDB89E32D204B3 /* Pods_grad2020_grad2020UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB7D577BBADDC9DABA77B55 /* Pods_grad2020_grad2020UITests.framework */; };
 		7D97565A881CBB75BAE9A9A2 /* Pods_grad2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FC3F3F0CE257D98F73A2CB /* Pods_grad2020.framework */; };
-		CE5D4D164A5E2331C57BB67A /* Pods_grad2020Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E444E4B7BFE7520F0E4705D /* Pods_grad2020Tests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		09D601B023E818C000762EC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D6019123E818C000762EC7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09D6019823E818C000762EC7;
-			remoteInfo = grad2020;
-		};
-		09D601BB23E818C000762EC7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09D6019123E818C000762EC7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09D6019823E818C000762EC7;
-			remoteInfo = grad2020;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09D6019923E818C000762EC7 /* grad2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grad2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,12 +25,6 @@
 		09D601A523E818C000762EC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09D601A823E818C000762EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D601AA23E818C000762EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09D601AF23E818C000762EC7 /* grad2020Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grad2020Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09D601B323E818C000762EC7 /* grad2020Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grad2020Tests.swift; sourceTree = "<group>"; };
-		09D601B523E818C000762EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09D601BA23E818C000762EC7 /* grad2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = grad2020UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09D601BE23E818C000762EC7 /* grad2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grad2020UITests.swift; sourceTree = "<group>"; };
-		09D601C023E818C000762EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		102D94F7404DDDA81F6CF887 /* Pods-grad2020Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grad2020Tests.debug.xcconfig"; path = "Target Support Files/Pods-grad2020Tests/Pods-grad2020Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DB7D577BBADDC9DABA77B55 /* Pods_grad2020_grad2020UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grad2020_grad2020UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E444E4B7BFE7520F0E4705D /* Pods_grad2020Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grad2020Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,22 +45,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D601AC23E818C000762EC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE5D4D164A5E2331C57BB67A /* Pods_grad2020Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09D601B723E818C000762EC7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F5880E628CDB89E32D204B3 /* Pods_grad2020_grad2020UITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,8 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				09D6019B23E818C000762EC7 /* grad2020 */,
-				09D601B223E818C000762EC7 /* grad2020Tests */,
-				09D601BD23E818C000762EC7 /* grad2020UITests */,
 				09D6019A23E818C000762EC7 /* Products */,
 				25319C8890394FFAD657CC7F /* Pods */,
 				6C9698836282DCB2B3F489E4 /* Frameworks */,
@@ -107,8 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				09D6019923E818C000762EC7 /* grad2020.app */,
-				09D601AF23E818C000762EC7 /* grad2020Tests.xctest */,
-				09D601BA23E818C000762EC7 /* grad2020UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,24 +88,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		09D601B223E818C000762EC7 /* grad2020Tests */ = {
-			isa = PBXGroup;
-			children = (
-				09D601B323E818C000762EC7 /* grad2020Tests.swift */,
-				09D601B523E818C000762EC7 /* Info.plist */,
-			);
-			path = grad2020Tests;
-			sourceTree = "<group>";
-		};
-		09D601BD23E818C000762EC7 /* grad2020UITests */ = {
-			isa = PBXGroup;
-			children = (
-				09D601BE23E818C000762EC7 /* grad2020UITests.swift */,
-				09D601C023E818C000762EC7 /* Info.plist */,
-			);
-			path = grad2020UITests;
-			sourceTree = "<group>";
-		};
 		25319C8890394FFAD657CC7F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +98,6 @@
 				102D94F7404DDDA81F6CF887 /* Pods-grad2020Tests.debug.xcconfig */,
 				D5D42C3954639D8372666D72 /* Pods-grad2020Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -199,45 +133,6 @@
 			productReference = 09D6019923E818C000762EC7 /* grad2020.app */;
 			productType = "com.apple.product-type.application";
 		};
-		09D601AE23E818C000762EC7 /* grad2020Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09D601C623E818C000762EC7 /* Build configuration list for PBXNativeTarget "grad2020Tests" */;
-			buildPhases = (
-				45199B1029D058FBCEE1DEEF /* [CP] Check Pods Manifest.lock */,
-				09D601AB23E818C000762EC7 /* Sources */,
-				09D601AC23E818C000762EC7 /* Frameworks */,
-				09D601AD23E818C000762EC7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09D601B123E818C000762EC7 /* PBXTargetDependency */,
-			);
-			name = grad2020Tests;
-			productName = grad2020Tests;
-			productReference = 09D601AF23E818C000762EC7 /* grad2020Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		09D601B923E818C000762EC7 /* grad2020UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09D601C923E818C000762EC7 /* Build configuration list for PBXNativeTarget "grad2020UITests" */;
-			buildPhases = (
-				6A2044C6662A87101AA382C2 /* [CP] Check Pods Manifest.lock */,
-				09D601B623E818C000762EC7 /* Sources */,
-				09D601B723E818C000762EC7 /* Frameworks */,
-				09D601B823E818C000762EC7 /* Resources */,
-				04024E4CEEA7F945ED1B354A /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09D601BC23E818C000762EC7 /* PBXTargetDependency */,
-			);
-			name = grad2020UITests;
-			productName = grad2020UITests;
-			productReference = 09D601BA23E818C000762EC7 /* grad2020UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,14 +145,6 @@
 				TargetAttributes = {
 					09D6019823E818C000762EC7 = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					09D601AE23E818C000762EC7 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 09D6019823E818C000762EC7;
-					};
-					09D601B923E818C000762EC7 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 09D6019823E818C000762EC7;
 					};
 				};
 			};
@@ -275,8 +162,6 @@
 			projectRoot = "";
 			targets = (
 				09D6019823E818C000762EC7 /* grad2020 */,
-				09D601AE23E818C000762EC7 /* grad2020Tests */,
-				09D601B923E818C000762EC7 /* grad2020UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,62 +177,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D601AD23E818C000762EC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09D601B823E818C000762EC7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04024E4CEEA7F945ED1B354A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-grad2020-grad2020UITests/Pods-grad2020-grad2020UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-grad2020-grad2020UITests/Pods-grad2020-grad2020UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grad2020-grad2020UITests/Pods-grad2020-grad2020UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45199B1029D058FBCEE1DEEF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-grad2020Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4DE97D68A19EE107533EEDEC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,28 +196,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-grad2020-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A2044C6662A87101AA382C2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-grad2020-grad2020UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -422,36 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09D601AB23E818C000762EC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D601B423E818C000762EC7 /* grad2020Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09D601B623E818C000762EC7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09D601BF23E818C000762EC7 /* grad2020UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		09D601B123E818C000762EC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09D6019823E818C000762EC7 /* grad2020 */;
-			targetProxy = 09D601B023E818C000762EC7 /* PBXContainerItemProxy */;
-		};
-		09D601BC23E818C000762EC7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09D6019823E818C000762EC7 /* grad2020 */;
-			targetProxy = 09D601BB23E818C000762EC7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09D601A723E818C000762EC7 /* LaunchScreen.storyboard */ = {
@@ -619,90 +400,6 @@
 			};
 			name = Release;
 		};
-		09D601C723E818C000762EC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 102D94F7404DDDA81F6CF887 /* Pods-grad2020Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = grad2020Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takealot.grad2020Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grad2020.app/grad2020";
-			};
-			name = Debug;
-		};
-		09D601C823E818C000762EC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5D42C3954639D8372666D72 /* Pods-grad2020Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = grad2020Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takealot.grad2020Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grad2020.app/grad2020";
-			};
-			name = Release;
-		};
-		09D601CA23E818C000762EC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECA19B680CA78B389C154987 /* Pods-grad2020-grad2020UITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = grad2020UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takealot.grad2020UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = grad2020;
-			};
-			name = Debug;
-		};
-		09D601CB23E818C000762EC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55842152C2EECAFDBA817CDC /* Pods-grad2020-grad2020UITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = grad2020UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.takealot.grad2020UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = grad2020;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -720,24 +417,6 @@
 			buildConfigurations = (
 				09D601C423E818C000762EC7 /* Debug */,
 				09D601C523E818C000762EC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09D601C623E818C000762EC7 /* Build configuration list for PBXNativeTarget "grad2020Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09D601C723E818C000762EC7 /* Debug */,
-				09D601C823E818C000762EC7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09D601C923E818C000762EC7 /* Build configuration list for PBXNativeTarget "grad2020UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09D601CA23E818C000762EC7 /* Debug */,
-				09D601CB23E818C000762EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
