@@ -5,20 +5,28 @@ struct HomeView: View {
     
     @ObservedObject var testData = ViewModelHomeView()
     
+    init() {
+        // To remove all separators including the actual ones:
+        UITableView.appearance().separatorStyle = .none
+    }
+    
     var body: some View {
-        NavigationView{
-            ScrollView(.horizontal) {
-                HStack {
-                    ForEach(testData.data) {
-                        tmpData in
-                        NavigationLink(
-                        destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
-                            ProductView(viewModel:  ViewModelProductView(data: tmpData))
+        
+        NavigationView {
+            List {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 0) {
+                        ForEach(testData.data) {
+                            tmpData in
+                            NavigationLink(
+                            destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
+                                ProductView(viewModel:  ViewModelProductView(data: tmpData))
+                            }
                         }
                     }
                 }
             }
-            .navigationBarTitle(Text("Takealot Deals"))
+            .navigationBarTitle(Text("Featured"))
             .buttonStyle(PlainButtonStyle())
         }
     }
