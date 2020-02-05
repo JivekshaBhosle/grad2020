@@ -12,17 +12,19 @@ struct HomeView: View {
     
     var body: some View {
         
+        
         NavigationView {
-            VStack(alignment: .leading) {
-                    Button(action: {
-                                    
-                    }, label: {
-                        Text(" All Deals")
-                    })
-                    .foregroundColor(Color.black)
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(5)
+            VStack(alignment: .leading){
+                Button(action: {
+                    
+                }, label: {
+                    Text(" All Deals")
+                })
+                    .padding(5)
+                    .padding(.horizontal, 7)
+                    .foregroundColor(Color.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(40)
                 
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -37,13 +39,16 @@ struct HomeView: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text("Featured Deals"))
+                .navigationBarTitle(
+                    Text("Featured Deals")
+                )
+                    .buttonStyle(PlainButtonStyle())
             }
-            .navigationBarTitle(Text("Featured"))
-            .buttonStyle(PlainButtonStyle())
         }
+        
     }
 }
+
 
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
