@@ -28,7 +28,7 @@ struct ProductView: View {
                 }
                 
             }
-            .frame(width: 280, height: 155)
+            .frame(width: 300, height: 240)
             .background(Color.orange)
             .cornerRadius(5)
             .scaledToFill()
