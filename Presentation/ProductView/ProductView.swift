@@ -18,10 +18,12 @@ struct ProductView: View {
                     VStack(alignment: .leading) {
                         
                         Text(viewModel.data.title).font(.body)
+                            .foregroundColor(Color.black)
                             .padding(.leading, 5)
                             .padding(.top, 5)
                         
                         Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
+                            .foregroundColor(Color.black)
                             .padding(.leading, 5)
                             .padding(.top, 5)
                     }
