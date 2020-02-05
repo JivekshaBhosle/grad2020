@@ -14,11 +14,14 @@ struct HomeView: View {
         
         NavigationView {
             VStack(alignment: .leading) {
-                    Button(action: {
-                                    
-                    }, label: {
+                Button(action: {
+                    
+                }, label: {
+                    NavigationLink(
+                    destination: ProductDetailView(viewModel: ViewModelProductView(data: testData.data.first!))) {
                         Text(" All Deals")
-                    })
+                    }
+                })
                     .foregroundColor(Color.black)
                     .padding()
                     .background(Color.white)
@@ -26,7 +29,7 @@ struct HomeView: View {
                 
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 0) {
+                        HStack(alignment: .top, spacing: 10) {
                             ForEach(testData.data) {
                                 tmpData in
                                 NavigationLink(
@@ -37,7 +40,6 @@ struct HomeView: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text("Featured Deals"))
             }
             .navigationBarTitle(Text("Featured"))
             .buttonStyle(PlainButtonStyle())
