@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    let viewModel: ProductViewModel
+    let viewModel: ViewModelProductView
 
     
     var body: some View {

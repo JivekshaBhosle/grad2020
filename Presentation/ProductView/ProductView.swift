@@ -4,7 +4,7 @@ import SwiftUI
 struct ProductView: View {
     
     ///ViewModel
-    let viewModel: ProductViewModel
+    let viewModel: ViewModelProductView
     
     var body: some View {
         
@@ -21,13 +21,13 @@ struct ProductView: View {
                     
                     VStack(alignment: .leading, spacing: 3) {
                         
-                        Text(viewModel.title).font(.headline)
+                        Text(viewModel.data.title).font(.headline)
                         
                     }
                 }
                 
                 // post content - specify nil for multi-line text
-                Text(viewModel.subTitle ?? "").lineLimit(nil).font(.body)
+                Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.body)
             }
                 .padding(.leading, 15)  // spacing from left edge of the view
                 .padding(.trailing, 15) // spacing from right edge of the view

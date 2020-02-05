@@ -3,18 +3,8 @@ import SwiftUI
 
 struct HomeView: View {
     
-    var testData: [ProductViewModel] {
-        
-        var tmpArray: [ProductViewModel] = []
-        
-        for index in 0...20 {
-            tmpArray.append(ProductViewModel.init(title: "My title \(index)", subTitle: "Dummy subTitle"))
-        }
-        
-        return tmpArray
-    }
-    
-    
+    @ObservedObject var testData = ViewModelHomeView()
+
     var body: some View {
         NavigationView{
             List {
@@ -22,28 +12,49 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(testData) {
+                        ForEach(testData.data) {
                             tmpData in
                             NavigationLink(
-                            destination: ProductDetailView(viewModel: tmpData)) {
-                                ProductView(viewModel: tmpData)
+                            destination: ProductDetailView(viewModel:  ViewModelProductView(data: tmpData))) {
+                                ProductView(viewModel:  ViewModelProductView(data: tmpData))
                             }
                         }
                     }
                 }
                 
-                ForEach(testData) {
-                    tmpData in
-                    
-                    NavigationLink(
-                    destination: ProductDetailView(viewModel: tmpData)) {
-                        ProductView(viewModel: tmpData)
-                    }
-                }
+//                ForEach(testData) {
+//                    tmpData in
+//                    
+//                    NavigationLink(
+//                    destination: ProductDetailView(viewModel: tmpData)) {
+//                        ProductView(viewModel: tmpData)
+//                    }
+//                }
                 
             }.navigationBarTitle(Text("Welcome to Takealot"))
         }
     }
+    
+//    private func getJsonData(_ bundle:Bundle, _ fileName:String) -> [String:Any] {
+//        let fileNameArray = fileName.split(separator: ".")
+//        guard let pathString = bundle.path(forResource: String(fileNameArray[0]), ofType: String(fileNameArray[1])) else {
+//            fatalError("Couldn't read \(fileName) file")
+//        }
+//
+//        guard let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8) else {
+//            fatalError("Unable to convert \(fileName) to String")
+//        }
+//
+//        guard let jsonData = jsonString.data(using: .utf8) else {
+//            fatalError("Unable to convert \(fileName) to Data")
+//        }
+//
+//        guard let jsonDictionary = try? JSONSerialization.jsonObject(with: jsonData, options: []) as? [String:Any] else {
+//            fatalError("Unable to convert \(fileName) to JSON dictionary")
+//        }
+//
+//        return jsonDictionary
+//    }
 }
 
 #if DEBUG
