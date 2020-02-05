@@ -5,11 +5,10 @@ struct ImageView: View {
     let url:String
     
     var body: some View {
-        VStack {
+        HStack(alignment: .center) {
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-//                .frame(width:100, height:100)
                 .onAppear {
                     guard let url = URL(string: self.url) else { return }
                     URLSession.shared.dataTask(with: url) { (data, response, error) in
