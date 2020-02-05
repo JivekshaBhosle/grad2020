@@ -12,23 +12,28 @@ struct ProductView: View {
         VStack(alignment: .leading, spacing: 10) {
             // Upper Stackview - Contains Horizontal stack and post content
             VStack(alignment: .leading, spacing: 15.0) {
-                HStack(spacing: 10) {
-                    
+                HStack(spacing: 60) {
                     // avatar
                     // AvatarView(image: post.user.avatar, size: 70)
-                    VStack(alignment: .leading, spacing: 3) {
+                    VStack(alignment: .leading) {
+                        
                         Text(viewModel.data.title).font(.body)
+                            .padding(.leading, 5)
+                            .padding(.top, 5)
+                        
+                        Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
+                            .padding(.leading, 5)
+                            .padding(.top, 5)
                     }
                 }
                 
-                // post content - specify nil for multi-line text
-                Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
             }
-            .frame(width: 200, height: 200)
-            .background(Color.purple)
-                .padding(7)  // spacing from left edge of the view
-                .padding(.trailing, 7)// spacing from right edge of the view
-                .cornerRadius(30)
+            .frame(width: 280, height: 155)
+            .background(Color.orange)
+            .cornerRadius(5)
+            .scaledToFill()
+                .padding(5)  // spacing from left edge of the view
+                .padding(.trailing, 5)// spacing from right edge of the view
             
             // post image
             //            Image(post.image ?? "")
