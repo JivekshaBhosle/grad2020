@@ -8,30 +8,26 @@ struct ProductView: View {
     
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 15.0) {
+        VStack(alignment: .leading) {
             
-//            HStack{
             ImageView.init(url: viewModel.data.full)
-                .aspectRatio(2, contentMode: .fit)
-                .background(Color.blue)
-                .padding(.top, 10)
-//            .frame(alignment: .center)
-//            }
-            
             Text(viewModel.data.title).font(.body)
                 .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                 .foregroundColor(Color.black)
-            
+                .background(Color.red)
             
             Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
                 .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                 .foregroundColor(Color.black)
-            
+            .background(Color.yellow)
+
+            Spacer()
+
         }
-        .frame(width: 300, height: 240)
+        .frame(width: 300, height: 240, alignment: .top)
         .background(Color.white)
         .scaledToFill()
-        .padding(EdgeInsets.init(top: 0, leading: 5, bottom: 0, trailing: 5))
+        .padding(EdgeInsets.init(top: 10, leading: 5, bottom: 0, trailing: 5))
         .overlay(
             RoundedRectangle(cornerRadius: 2)
                 .stroke(Color.gray, lineWidth: 2)
