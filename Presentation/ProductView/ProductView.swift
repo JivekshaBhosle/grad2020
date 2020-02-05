@@ -13,35 +13,29 @@ struct ProductView: View {
             // Upper Stackview - Contains Horizontal stack and post content
             VStack(alignment: .leading, spacing: 15.0) {
                 HStack(spacing: 60) {
-                    // avatar
-                    // AvatarView(image: post.user.avatar, size: 70)
+
                     VStack(alignment: .leading) {
                         
                         Text(viewModel.data.title).font(.body)
+                            .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                             .foregroundColor(Color.black)
-                            .padding(.leading, 5)
-                            .padding(.top, 5)
                         
+                        ImageView.init(url: viewModel.data.full)
+
                         Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
+                            .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
+                        
                             .foregroundColor(Color.black)
-                            .padding(.leading, 5)
-                            .padding(.top, 5)
                     }
                 }
-                
             }
             .frame(width: 300, height: 240)
             .background(Color.orange)
             .cornerRadius(5)
             .scaledToFill()
-                .padding(5)  // spacing from left edge of the view
-                .padding(.trailing, 5)// spacing from right edge of the view
+            .padding(EdgeInsets.init(top: 0, leading: 5, bottom: 0, trailing: 5))
             
-            // post image
-            //            Image(post.image ?? "")
-            //                .resizable()  // creates resizable image
-            //                // this will allow image to fit the screen width maintaining aspect ratio
-            //                .aspectRatio(3/2, contentMode: .fit)
+            
         }
     }
 }
