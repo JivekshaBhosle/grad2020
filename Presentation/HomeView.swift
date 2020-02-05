@@ -17,8 +17,7 @@ struct HomeView: View {
                     Button(action: {
                                     
                     }, label: {
-                        Text("Click Me")
-                        Text("Subtitle")
+                        Text(" All Deals")
                     })
                     .foregroundColor(Color.black)
                     .padding()
