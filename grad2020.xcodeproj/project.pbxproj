@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098E7B8E23EAD4B300394823 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098E7B8D23EAD4B300394823 /* ProductListView.swift */; };
 		09D6019D23E818C000762EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6019C23E818C000762EC7 /* AppDelegate.swift */; };
 		09D6019F23E818C000762EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6019E23E818C000762EC7 /* SceneDelegate.swift */; };
 		09D601A123E818C000762EC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D601A023E818C000762EC7 /* HomeView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		098E7B8D23EAD4B300394823 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		09D6019923E818C000762EC7 /* grad2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grad2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D6019C23E818C000762EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D6019E23E818C000762EC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		098E7B8C23EAAC5700394823 /* ProductListView */ = {
+			isa = PBXGroup;
+			children = (
+				098E7B8D23EAD4B300394823 /* ProductListView.swift */,
+			);
+			path = ProductListView;
+			sourceTree = "<group>";
+		};
 		09947F3E23E849B700B8BFE8 /* TakealotService */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 			children = (
 				7C353D6B23EAC2AB003070FD /* MappingObject */,
 				7C353D6A23EAC297003070FD /* ViewModel */,
+				098E7B8C23EAAC5700394823 /* ProductListView */,
 				7C00796223E865E800834DBD /* ProductDetailView */,
 				7C00795D23E8602700834DBD /* ProductView */,
 				09D601A023E818C000762EC7 /* HomeView.swift */,
@@ -299,6 +310,7 @@
 				09D601A123E818C000762EC7 /* HomeView.swift in Sources */,
 				7C00796123E8650D00834DBD /* ProductView.swift in Sources */,
 				7C00795F23E8604900834DBD /* ViewModelProductView.swift in Sources */,
+				098E7B8E23EAD4B300394823 /* ProductListView.swift in Sources */,
 				7C00796423E865FB00834DBD /* ProductDetailView.swift in Sources */,
 				7C353D6723EABB42003070FD /* ProductObject.swift in Sources */,
 			);

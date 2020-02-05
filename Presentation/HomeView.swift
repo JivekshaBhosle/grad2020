@@ -4,35 +4,22 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var testData = ViewModelHomeView()
-
+    
     var body: some View {
-        NavigationView{
-            List {
-                Text("Hello, World!")
-                
-                ScrollView(.horizontal) {
-                    HStack {
-                        ForEach(testData.data) {
-                            tmpData in
-                            NavigationLink(
-                            destination: ProductDetailView(viewModel:  ViewModelProductView(data: tmpData))) {
-                                ProductView(viewModel:  ViewModelProductView(data: tmpData))
+            NavigationView{
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(testData.data) {
+                                tmpData in
+                                NavigationLink(
+                                destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
+                                    ProductView(viewModel:  ViewModelProductView(data: tmpData))
+                                }
                             }
                         }
                     }
-                }
-                
-//                ForEach(testData) {
-//                    tmpData in
-//                    
-//                    NavigationLink(
-//                    destination: ProductDetailView(viewModel: tmpData)) {
-//                        ProductView(viewModel: tmpData)
-//                    }
-//                }
-                
-            }.navigationBarTitle(Text("Welcome to Takealot"))
-        }
+                    .navigationBarTitle(Text("Takealot Deals"))
+            }
     }
     
 //    private func getJsonData(_ bundle:Bundle, _ fileName:String) -> [String:Any] {
