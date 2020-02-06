@@ -3,11 +3,11 @@ import SwiftUI
 
 struct ProductAllListView: View {
     
-    @ObservedObject var testData = ViewModelProductListView()
+    let viewModel: ViewModelProductListView
     
     var body: some View {
         List{
-            ForEach(testData.data) {
+            ForEach(viewModel.data) {
                 tmpData in
                 NavigationLink(
                 destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
@@ -15,6 +15,6 @@ struct ProductAllListView: View {
                 }
             }
         }
-        .navigationBarTitle(Text("All Deals"))
+        .navigationBarTitle(Text(viewModel.screenTitle))
     }
 }

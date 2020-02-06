@@ -15,9 +15,9 @@ struct HomeView: View {
             
             List {
                 NavigationLink(
-                destination: ProductAllListView()) {
-                    Text("All Deals")
-                    .foregroundColor(Color.blue)
+                destination: ProductAllListView(viewModel: viewModel.allDeals.viewModel)) {
+                    Text(viewModel.allDeals.title)
+                        .foregroundColor(viewModel.allDeals.textColor)
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -32,14 +32,13 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Featured Deals"))
+            .navigationBarTitle(Text(viewModel.screenTitle))
             .buttonStyle(PlainButtonStyle())
         }
         .padding()
         
     }
 }
-
 
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
