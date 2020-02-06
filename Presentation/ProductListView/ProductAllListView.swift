@@ -19,7 +19,7 @@ struct ProductAllListView: View {
                     ForEach(testData.data) {
                         tmpData in
                         NavigationLink(
-                        destination: ProductListView(viewModel: ViewModelProductView(data: tmpData))) {
+                        destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
                             ProductListView(viewModel:  ViewModelProductView(data: tmpData))
                         }
                     }

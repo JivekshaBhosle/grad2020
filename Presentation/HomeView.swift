@@ -11,8 +11,6 @@ struct HomeView: View {
     }
     
     var body: some View {
-        
-        
         NavigationView {
             VStack(alignment: .leading) {
                 Button(action: {
@@ -28,7 +26,6 @@ struct HomeView: View {
                     .foregroundColor(Color.white)
                     .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(40)
-                
                 
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
