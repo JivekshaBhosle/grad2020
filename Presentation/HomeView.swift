@@ -3,7 +3,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @ObservedObject var testData = ViewModelHomeView()
+    @ObservedObject var viewModel = ViewModelHomeView()
     
     init() {
         // To remove all separators including the actual ones:
@@ -12,40 +12,29 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                Button(action: {
-                    
-                }, label: {
-                    NavigationLink(
-                    destination: ProductAllListView()) {
-                        Text(" All Deals")
-                    }
-                })
-                    .padding(5)
-                    .padding(.horizontal, 7)
-                    .foregroundColor(Color.white)
-                    .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(40)
+            
+            List {
+                NavigationLink(
+                destination: ProductAllListView()) {
+                    Text("All Deals")
+                }
                 
-                List {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 10) {
-                            ForEach(testData.data) {
-                                tmpData in
-                                NavigationLink(
-                                destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
-                                    ProductView(viewModel:  ViewModelProductView(data: tmpData))
-                                }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 10) {
+                        ForEach(viewModel.data) {
+                            tmpData in
+                            NavigationLink(
+                            destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
+                                ProductView(viewModel:  ViewModelProductView(data: tmpData))
                             }
                         }
                     }
                 }
-                .navigationBarTitle(
-                    Text("Featured Deals")
-                )
-                    .buttonStyle(PlainButtonStyle())
             }
+            .navigationBarTitle(Text("Featured Deals"))
+            .buttonStyle(PlainButtonStyle())
         }
+        .padding()
         
     }
 }

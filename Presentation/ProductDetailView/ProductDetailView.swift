@@ -22,6 +22,8 @@ struct ProductDetailView: View {
                     .padding(EdgeInsets.init(top: 10, leading: 5, bottom: 0, trailing: 5))
                     .foregroundColor(Color.black)
             }
+            .navigationBarTitle(Text(""))
+
     }
 }
 

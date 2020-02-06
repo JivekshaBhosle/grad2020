@@ -1,10 +1,3 @@
-//
-//  ProductListView.swift
-//  grad2020
-//
-//  Created by Jiveksha Bhosle on 2020/02/05.
-//  Copyright © 2020 Jiveksha Bhosle. All rights reserved.
-//
 
 import SwiftUI
 
