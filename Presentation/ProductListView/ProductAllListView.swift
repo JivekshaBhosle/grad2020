@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ProductAllListView: View {
     
-    @ObservedObject var testData = ViewModelHomeView()
+    @ObservedObject var testData = ViewModelProductListView()
     
     var body: some View {
         List{

@@ -23,6 +23,7 @@
 		7C353D6923EAC0F2003070FD /* ViewModelHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C353D6823EAC0F2003070FD /* ViewModelHomeView.swift */; };
 		7C353D6F23EAE6AC003070FD /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C353D6E23EAE6AC003070FD /* ProductImageView.swift */; };
 		7D97565A881CBB75BAE9A9A2 /* Pods_grad2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FC3F3F0CE257D98F73A2CB /* Pods_grad2020.framework */; };
+		9187ED479644B8197D9FCB63 /* ViewModelProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9187ECDE5096CA8833B40D7A /* ViewModelProductListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		7C353D6623EABB42003070FD /* ProductObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductObject.swift; sourceTree = "<group>"; };
 		7C353D6823EAC0F2003070FD /* ViewModelHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHomeView.swift; sourceTree = "<group>"; };
 		7C353D6E23EAE6AC003070FD /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
+		9187ECDE5096CA8833B40D7A /* ViewModelProductListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProductListView.swift; sourceTree = "<group>"; };
 		A957470556A2460ACF25AA77 /* Pods-grad2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grad2020.release.xcconfig"; path = "Target Support Files/Pods-grad2020/Pods-grad2020.release.xcconfig"; sourceTree = "<group>"; };
 		D5D42C3954639D8372666D72 /* Pods-grad2020Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grad2020Tests.release.xcconfig"; path = "Target Support Files/Pods-grad2020Tests/Pods-grad2020Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D8FC3F3F0CE257D98F73A2CB /* Pods_grad2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grad2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 			children = (
 				7C353D6823EAC0F2003070FD /* ViewModelHomeView.swift */,
 				7C00795E23E8604900834DBD /* ViewModelProductView.swift */,
+				9187ECDE5096CA8833B40D7A /* ViewModelProductListView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				098E7B8E23EAD4B300394823 /* ProductAllListView.swift in Sources */,
 				7C00796423E865FB00834DBD /* ProductDetailView.swift in Sources */,
 				7C353D6723EABB42003070FD /* ProductObject.swift in Sources */,
+				9187ED479644B8197D9FCB63 /* ViewModelProductListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
