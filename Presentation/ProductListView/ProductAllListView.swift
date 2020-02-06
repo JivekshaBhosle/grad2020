@@ -14,12 +14,14 @@ struct ProductAllListView: View {
     
     var body: some View {
         NavigationView{
-            List{
-                ForEach(testData.data) {
-                    tmpData in
-                    NavigationLink(
-                    destination: ProductView(viewModel: ViewModelProductView(data: tmpData))) {
-                        ProductView(viewModel:  ViewModelProductView(data: tmpData))
+            VStack(alignment: .leading){
+                List{
+                    ForEach(testData.data) {
+                        tmpData in
+                        NavigationLink(
+                        destination: ProductListView(viewModel: ViewModelProductView(data: tmpData))) {
+                            ProductListView(viewModel:  ViewModelProductView(data: tmpData))
+                        }
                     }
                 }
             }

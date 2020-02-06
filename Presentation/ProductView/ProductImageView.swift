@@ -5,7 +5,7 @@ struct ImageView: View {
     let url:String
     
     var body: some View {
-        HStack(alignment: .center) {
+        VStack() {
             Image(uiImage: image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -17,11 +17,8 @@ struct ImageView: View {
                         RunLoop.main.perform {
                             self.image = tmpImage
                         }
-                        
                     }.resume()
             }
-        }
-        
-        
+        }.frame(width:300, height: 100, alignment: .center)
     }
 }

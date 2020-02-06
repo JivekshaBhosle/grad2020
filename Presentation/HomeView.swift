@@ -14,11 +14,14 @@ struct HomeView: View {
         
         
         NavigationView {
-            VStack(alignment: .leading){
+            VStack(alignment: .leading) {
                 Button(action: {
                     
                 }, label: {
-                    Text(" All Deals")
+                    NavigationLink(
+                    destination: ProductAllListView()) {
+                        Text(" All Deals")
+                    }
                 })
                     .padding(5)
                     .padding(.horizontal, 7)
@@ -26,9 +29,10 @@ struct HomeView: View {
                     .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(40)
                 
+                
                 List {
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 0) {
+                        HStack(alignment: .top, spacing: 10) {
                             ForEach(testData.data) {
                                 tmpData in
                                 NavigationLink(
