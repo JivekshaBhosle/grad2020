@@ -23,14 +23,15 @@ struct ProductView: View {
 
             Spacer()
 
+
         }
-        .frame(width: 300, height: 230, alignment: .top)
+        .frame(width: 300, height: 235, alignment: .top)
         .background(Color.white)
         .scaledToFill()
         .padding(EdgeInsets.init(top: 10, leading: 5, bottom: 0, trailing: 5))
         .overlay(
             RoundedRectangle(cornerRadius: 2)
-                .stroke(Color.gray, lineWidth: 0.5)
+                .stroke(Color.gray, lineWidth: 1.0)
         )
         
     }
