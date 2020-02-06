@@ -4,42 +4,45 @@
         "id": "PLID54527760",
         "title": "Canon 2000D 24MP DSLR DC Starter Bundle",
         "subtitle": "Cannon 2000D",
-        "url": "https://media.takealot.com/covers_tsins/57560386/8714574662862-1-full.jpg"
+        "url": "https://media.takealot.com/covers_tsins/57560386/8714574662862-1-full.jpg",
+        "cost": 100
     },
     {
         "id": "PLID46863509",
         "title": "Megamaster - Sizzler 320",
         "subtitle": "Sizzler 320",
-        "url": "https://media.takealot.com/covers_tsins/49734379/49734379-1-full.jpg"
-        
+        "url": "https://media.takealot.com/covers_tsins/49734379/49734379-1-full.jpg",
+        "cost": 130
     },
     {
         
         "id": "PLID53332160",
         "title": "Fine Living - Resort Rattan Lounger",
         "subtitle": "Rattan Lounger",
-        "url": "https://media.takealot.com/covers_tsins/56313407/56313407_1-full.jpg"
-        
+        "url": "https://media.takealot.com/covers_tsins/56313407/56313407_1-full.jpg",
+        "cost": 44230230
     },
     {
         "id": "PLID58971240",
         "title": "Sun Lounge - Deluxe -150kg",
         "subtitle": "Lounge - Deluxe",
-        "url": "https://media.takealot.com/covers_tsins/62105712/9320531076840-1-full.jpg"
+        "url": "https://media.takealot.com/covers_tsins/62105712/9320531076840-1-full.jpg",
+        "cost": null
     },
     {
         "id": "PLID64197342",
         "title": "Campground Love Seat Style Double Camping Chair",
         "subtitle": "Double Camping Chair",
-        "url": "https://media.takealot.com/covers_tsins/67357436/67357436-1-full.jpg"
-        
+        "url": "https://media.takealot.com/covers_tsins/67357436/67357436-1-full.jpg",
+        "cost": 3350
     },
     {
         "id": "PLID60564717",
         "title": "Nuovo Baby Bath With Temperature Sensor - Pink",
         "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "url": "https://media.takealot.com/covers_tsins/45332463/45332463-1-full.jpg"
-        
+        "url": "https://media.takealot.com/covers_tsins/45332463/45332463-1-full.jpg",
+        "cost": 102930
+
     }
 ]
 
