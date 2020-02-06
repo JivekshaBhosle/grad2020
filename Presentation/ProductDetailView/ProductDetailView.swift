@@ -7,7 +7,7 @@ struct ProductDetailView: View {
     var body: some View {
             List{
                 
-                ImageView.init(url: viewModel.data.url)
+                ImageView.init(url: "https://i.picsum.photos/id/1/5616/3744.jpg")
                     .frame(width: 330, height: 150, alignment: .trailing)
                 
                 Text(viewModel.data.title).font(.body)

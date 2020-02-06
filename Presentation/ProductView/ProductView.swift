@@ -10,13 +10,14 @@ struct ProductView: View {
         
         VStack(alignment: .leading) {
             
-            ImageView.init(url: viewModel.data.url)
+            ImageView.init(url:"https://i.picsum.photos/id/0/5616/3744.jpg")
+
             Text(viewModel.data.title).font(.body)
                 .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                 .foregroundColor(Color.black)
                 .background(Color.white)
             
-            Text(viewModel.data.subtitle ?? "").lineLimit(nil).font(.caption)
+            Text("").lineLimit(nil).font(.caption)
                 .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                 .foregroundColor(Color.black)
             .background(Color.white)
