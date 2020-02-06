@@ -17,6 +17,7 @@ struct HomeView: View {
                 NavigationLink(
                 destination: ProductAllListView()) {
                     Text("All Deals")
+                    .foregroundColor(Color.blue)
                 }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
