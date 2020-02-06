@@ -23,6 +23,7 @@ struct ProductView: View {
 
             Spacer()
 
+
         }
         .frame(width: 300, height: 235, alignment: .top)
         .background(Color.white)
