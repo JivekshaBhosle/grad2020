@@ -3,8 +3,8 @@ iOS Grad Program sample app.
 
 Steps to Setup;
 
-# Install xcode, appcode
-# Install Sourcetree
-# Import the project with link;
-  https://github.com/JivekshaBhosle/grad2020.git
+1) Install xcode, appcode
+2) Install Sourcetree
+3) Import the project with link;
+   https://github.com/JivekshaBhosle/grad2020.git
 
