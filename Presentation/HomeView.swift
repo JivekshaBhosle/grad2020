@@ -13,29 +13,21 @@ struct HomeView: View {
     var body: some View {
         
         NavigationView {
-            VStack(alignment: .leading) {
-                Button(action: {
-                    
-                }, label: {
-                    NavigationLink(
-                    destination: ProductDetailView(viewModel: ViewModelProductView(data: testData.data.first!))) {
-                        Text(" All Deals")
-                    }
-                })
-                    .foregroundColor(Color.black)
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(5)
+            
+            List {
                 
-                List {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 10) {
-                            ForEach(testData.data) {
-                                tmpData in
-                                NavigationLink(
-                                destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
-                                    ProductView(viewModel:  ViewModelProductView(data: tmpData))
-                                }
+                NavigationLink(
+                destination: ProductDetailView(viewModel: ViewModelProductView(data: testData.data.first!))) {
+                    Text(" All Deals")
+                }
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 10) {
+                        ForEach(testData.data) {
+                            tmpData in
+                            NavigationLink(
+                            destination: ProductDetailView(viewModel: ViewModelProductView(data: tmpData))) {
+                                ProductView(viewModel:  ViewModelProductView(data: tmpData))
                             }
                         }
                     }

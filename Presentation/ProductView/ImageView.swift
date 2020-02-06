@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ImageView: View {
-    @State var image:UIImage = UIImage()
+    @State private var image:UIImage = UIImage()
     let url:String
     
     var body: some View {
