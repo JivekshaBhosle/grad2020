@@ -1,6 +1,7 @@
 
 import SwiftUI
 
+//Home Screen
 struct HomeView: View {
     
     @ObservedObject var viewModel = ViewModelHomeView()
