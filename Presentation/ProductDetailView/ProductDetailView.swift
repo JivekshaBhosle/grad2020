@@ -10,7 +10,7 @@ struct ProductDetailView: View {
                 ImageView.init(url: "https://i.picsum.photos/id/1/5616/3744.jpg")
                     .frame(width: 330, height: 150, alignment: .trailing)
                 
-                Text(viewModel.data.title).font(.body)
+                Text("Product Title").font(.body)
                     .padding(EdgeInsets.init(top: 5, leading: 5, bottom: 0, trailing: 0))
                     .foregroundColor(Color.black)
                     .background(Color.white)

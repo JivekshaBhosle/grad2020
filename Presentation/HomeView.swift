@@ -15,11 +15,9 @@ struct HomeView: View {
         NavigationView {
             
             List {
-                NavigationLink(
-                destination: ProductAllListView(viewModel: viewModel.allDeals.viewModel)) {
-                    Text(viewModel.allDeals.title)
+
+                Text(viewModel.allDeals.title)
                         .foregroundColor(viewModel.allDeals.textColor)
-                }
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(alignment: .top, spacing: 10) {
@@ -37,7 +35,6 @@ struct HomeView: View {
             .buttonStyle(PlainButtonStyle())
         }
         .padding()
-        
     }
 }
 
