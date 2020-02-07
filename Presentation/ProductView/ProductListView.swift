@@ -2,7 +2,9 @@
 import SwiftUI
 
 struct ProductListView: View {
-    
+    /**
+        1) move all unnecessary logic from View class to ViewModel
+    */
     ///ViewModel
     let viewModel: ViewModelProductView
     
