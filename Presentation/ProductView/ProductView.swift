@@ -4,7 +4,8 @@ import SwiftUI
 struct ProductView: View {
     /**
     1) Fix the image for the product.
-    2) Add text with price for the product.
+    2) Fix the title of the product.
+    3) Add text with price for the product.
     */
     ///ViewModel
     let viewModel: ViewModelProductView
